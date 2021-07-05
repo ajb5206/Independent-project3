@@ -5,30 +5,34 @@
 
 let subArray;
 let numArray;
-for (let i = 0; i <= userInput.length; i++) {
-	subArray.push(i);
-	numArray.push(subArray.concat());
+let newString;
+function arrayMaker() {
+  for (let i = 0; i <= userInput.length; i++) {
+	  subArray.push(i);
+	  numArray.push(subArray.concat());
+  };
+	newstring = numArray.toString();
 };
 
-let newString = numArray.toString();
+function regexReplacer () {
+  newString.replace(/3/g, "Won't you be my neighbor?");
 
-newString.replace(/3/g, "Won't you be my neighbor?");
+	newString.replace(/2/g, "Boop!");
 
-newString.replace(/2/g, "Boop!");
-
-newString.replace(/1/g, "Beep!");
+	newString.replace(/1/g, "Beep!");
+};
 
 //user logic
 
 $(document).ready(function() {
-	$("#formOne").submit(function(event) {
+	$("form#inputForm").submit(function(event) {
 	event.preventDefault();
-	let userInput = $("input#input1").val();
+	const userInput = $("input#input1").val();
   });
 });
 
 $(document).ready(function() {
-	$("formOne").submit(function(event) {
+	$("form#inputForm").submit(function(event) {
 		event.preventDefault();
 		$(".output").text(newString);
 	});
