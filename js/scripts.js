@@ -1,26 +1,39 @@
-// user logic
-$(document).ready(function() {
-	$("#formOne").submit(function(event) {
-	event.preventDefault();
-	let userInput = $("input#input1").val();
-	let userInput = parseInt(userInput);
-  });
-	return userInput;
-});
+// utility logic
 
-// business logic
 
-const numArray = [];
-let newArray = [];
-for (let i=0; i<=userInput.length; i++) {
-	numArray.forEach(function(number) {
-	newArray.push(number+1)
-	});
+//business logic
+
+let subArray;
+let numArray;
+for (let i = 0; i <= userInput.length; i++) {
+	subArray.push(i);
+	numArray.push(subArray.concat());
 };
 
-let newString = String(newArray);
+let newString = numArray.toString();
+
 newString.replace(/3/g, "Won't you be my neighbor?");
 
 newString.replace(/2/g, "Boop!");
 
 newString.replace(/1/g, "Beep!");
+
+//user logic
+
+$(document).ready(function() {
+	$("#formOne").submit(function(event) {
+	event.preventDefault();
+	let userInput = $("input#input1").val();
+  });
+});
+
+$(document).ready(function() {
+	$("formOne").submit(function(event) {
+		event.preventDefault();
+		$(".output").text(newString);
+	});
+});
+
+
+
+
