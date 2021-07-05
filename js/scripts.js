@@ -2,12 +2,18 @@
 $(document).ready(function() {
 	$("#formOne").submit(function(event) {
 	event.preventDefault();
-	const userInput = $("input#input1").val();
-
-$(".number1").parseInt(userInput);
-});
+	let userInput = $("input#input1").val();
+	let userInput = parseInt(userInput);
+  });
+	return userInput;
 });
 
 // business logic
 
-const numArray = []
+const numArray = [];
+let newArray = [];
+for (let i=0; i<=userInput.length; i++) {
+	numArray.forEach(function(number) {
+	newArray.push(number+1)
+	});
+};
