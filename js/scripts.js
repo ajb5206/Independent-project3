@@ -17,3 +17,10 @@ for (let i=0; i<=userInput.length; i++) {
 	newArray.push(number+1)
 	});
 };
+
+let newString = String(newArray);
+newString.replace(/3/g, "Won't you be my neighbor?");
+
+newString.replace(/2/g, "Boop!");
+
+newString.replace(/1/g, "Beep!");
