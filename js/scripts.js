@@ -10,8 +10,8 @@ function arrayMaker() {
   for (let i = 0; i <= userInput.length; i++) {
 	  subArray.push(i);
 	  numArray.push(subArray.concat());
+		newString = numArray.toString();
   };
-	newstring = numArray.toString();
 };
 
 function regexReplacer () {
@@ -28,15 +28,12 @@ $(document).ready(function() {
 	$("form#inputForm").submit(function(event) {
 	event.preventDefault();
 	const userInput = $("input#input1").val();
+	const arrayOutput = arrayMaker(userInput);
+	const output = regexReplacer(newString);
+	$(".output").text(newString);
   });
 });
 
-$(document).ready(function() {
-	$("form#inputForm").submit(function(event) {
-		event.preventDefault();
-		$(".output").text(newString);
-	});
-});
 
 
 
