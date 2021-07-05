@@ -1,36 +1,31 @@
-// utility logic
-
-
 //business logic
 
 let subArray;
 let numArray;
-let newString;
 function arrayMaker() {
-  for (let i = 0; i <= userInput.length; i++) {
+  for (let i = 0; i <= userNumber.length; i++) {
 	  subArray.push(i);
 	  numArray.push(subArray.concat());
-		newString = numArray.toString();
-  };
-};
+		return numArray.toString();
+  }; 
+}
 
 function regexReplacer () {
-  newString.replace(/3/g, "Won't you be my neighbor?");
-
-	newString.replace(/2/g, "Boop!");
-
-	newString.replace(/1/g, "Beep!");
-};
+  newString.replace(/\d{1,9}*3\d{1,9}*/g, "Won't you be my neighbor?");
+	newString.replace(/\d{1,9}*2\d{1,9}*/g, "Boop!");
+	newString.replace(/\d{1,9}*1\d{1,9}*/g, "Beep!");
+  return newString;
+}
 
 //user logic
 
 $(document).ready(function() {
 	$("form#inputForm").submit(function(event) {
-	event.preventDefault();
-	const userInput = $("input#input1").val();
-	const arrayOutput = arrayMaker(userInput);
-	const output = regexReplacer(newString);
-	$(".output").text(newString);
+		event.preventDefault();
+			const userNumber = parseInt($("#input1").val());
+			let newString = arrayMaker(userNumber);
+			const output = regexReplacer(newString);
+			$("#output").text(output);
   });
 });
 
