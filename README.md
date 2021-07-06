@@ -37,7 +37,7 @@ _This is a webpage designed to practice the usage of Javascript by way of loopin
 
 ## Known Bugs
 
-* Does not function; confusion of pulling values back and forth between functions
+* Does not function; confusion surrounding pulling values back and forth between functions
 
 ## 
 Copyright <2021> <MIT>
