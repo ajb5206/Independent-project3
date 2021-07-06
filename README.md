@@ -23,7 +23,7 @@ _This is a webpage designed to practice the usage of Javascript by way of loopin
 * Open terminal
 * Create a new directory
 * Initialize git inside new directory
-* Run "git clone https://github.com/ajb5206/Independent-project2" in your designated directory
+* Run "git clone https://github.com/ajb5206/Independent-project3" in your designated directory
 * Enter "git remote rm IP3" in the terminal to remove the remote attached
 * Enter "git remote add origin [your-project-url-here]
 * Push your newly updated code
