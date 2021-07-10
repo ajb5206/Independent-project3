@@ -5,10 +5,10 @@ function arrayMaker(userInput) {
   let numArray = [];
 	for (let i = 0; i <= userInput; i++) {
 		const outputString = i.toString();
-		//if (outputString.includes(3)) {
-		//	numArray.push("Won't you be my neightbor?")
-		//}
-		if (outputString.includes(2)) {
+		if (outputString.includes(3)) {
+			numArray.push("Won't you be my neightbor?")
+		}
+		else if (outputString.includes(2)) {
 			numArray.push("Boop!")
 		} 
 		else if (outputString.includes(1)) {
