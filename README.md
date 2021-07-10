@@ -45,6 +45,9 @@ _This is a webpage designed to practice the usage of Javascript by way of loopin
 * Test: "It should return an output of 0, Beep! if the number 1 is inputted"
 * Expect(arrayMaker(1).toEqual[Beep!]);
 
+* Describe: arrayMaker()
+* Test: "It should return an output of 0, Beep!, Boop! if the number 2 is inputted"
+* Expect(arrayMaker(1).toEqual[Boop!]);
 ## 
 Copyright <2021> <MIT>
 
