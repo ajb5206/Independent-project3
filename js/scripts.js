@@ -3,14 +3,22 @@
 
 function arrayMaker(number) {
   let numArray = [];
-	let
 	for (let i = 0; i <= userInput; i++) {
-		if i.toString includes("3") i.push "won't you be my neightbor".
-		else if i.toString.includes(2) i.push boop
-		else if i.toString.incudes(1) i.push beep
-		else 
-  }; 
-	return 
+		const outputString = i.toString();
+		if (outputString.includes(3)) {
+			numArray.push("Won't you be my neightbor?")
+		}
+		else if (outputString.includes(2)) {
+			numArray.push("Boop!")
+		} 
+		else if (outputString.i.incudes(1)) {
+			numArray.push("Beep!")
+		} 
+		else {
+			numArray.push(outputString)
+		}
+  }
+	return numArray;
 };
 
 
