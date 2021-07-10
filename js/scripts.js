@@ -1,7 +1,7 @@
 //business logic
 
 
-function arrayMaker(number) {
+function arrayMaker(userInput) {
   let numArray = [];
 	for (let i = 0; i <= userInput; i++) {
 		const outputString = i.toString();
@@ -11,14 +11,14 @@ function arrayMaker(number) {
 		else if (outputString.includes(2)) {
 			numArray.push("Boop!")
 		} 
-		else if (outputString.i.incudes(1)) {
+		else if (outputString.includes(1)) {
 			numArray.push("Beep!")
 		} 
 		else {
 			numArray.push(outputString)
 		}
   }
-	return numArray;
+	return numArray = numArray.join(", ");
 };
 
 
@@ -27,12 +27,11 @@ function arrayMaker(number) {
 $(document).ready(function() {
 	$("form#inputForm").submit(function(event) {
 		event.preventDefault();
-		const userInput = parseInt($("#input1").val());
+		let userInput = parseInt($("#input1").val());
 		const userString = arrayMaker(userInput);
-		// const output = regexReplacer(userString);
 		$("#output").text(userString);
+		$("#input1").val("");
   });
-	return userString;
 });
 
 
