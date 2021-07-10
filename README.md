@@ -52,6 +52,10 @@ _This is a webpage designed to practice the usage of Javascript by way of loopin
 * Describe: arrayMaker()
 * Test: "It should return an output of '0, Beep!, Boop!, Won't you be my neighbor?' if the number 3 is inputted"
 * Expect(arrayMaker(1).toEqual[Won't you be my neighbor?]);
+
+* Describe: arrayMaker()
+* Test: "It should return an output of '0, Beep!, Boop!, ....Won't you be my neightbor?' if the number 13 is inputted"
+* Expect(arrayMaker(1).toEqual[Beep!]);
 ## 
 Copyright <2021> <MIT>
 
