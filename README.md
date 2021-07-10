@@ -35,9 +35,11 @@ _This is a webpage designed to practice the usage of Javascript by way of loopin
 * Web application then runs a regex.replace to replace specified values
 * Web application outputs a string with replaced values counting to user's chosen number
 
-## Known Bugs
+## Testing
 
-* Does not function; confusion surrounding pulling values back and forth between functions
+* Describe: arrayMaker()
+* Test: "It should return an output of 0 if the number 0 is inputted"
+* Expect(arrayMaker(0).toEqual[0]);
 
 ## 
 Copyright <2021> <MIT>
